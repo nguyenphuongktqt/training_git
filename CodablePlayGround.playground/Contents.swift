@@ -71,13 +71,13 @@ var json3: String = """
     }
 """
 
-//let data = Data(json3.utf8)
-//let decoder = JSONDecoder()
-//let personEntity = try? decoder.decode(PersonData.self, from: data)
-//if let personEntity = personEntity {
-//    print(personEntity)
-//    print(personEntity.person.name)
-//}
+let data = Data(json3.utf8)
+let decoder = JSONDecoder()
+let personEntity = try? decoder.decode(PersonData.self, from: data)
+if let personEntity = personEntity {
+    print(personEntity)
+    print(personEntity.person.name)
+}
 
 /// MARKED : Swift Codable key decoding strategy
 
